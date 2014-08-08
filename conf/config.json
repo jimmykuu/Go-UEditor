@@ -1,0 +1,9 @@
+{
+    "imageUrl": "http://localhost:8080/ueditor/go/controller?action=uploadimage",
+	"imageActionName": "uploadimage",
+	"imageUrlPrefix": "http://localhost:8080",
+    "imagePath": "/static/upload",
+    "imageFieldName": "upfile",
+    "imageMaxSize": 2048,
+    "imageAllowFiles": [".png", ".jpg", ".jpeg", ".gif", ".bmp"]
+}

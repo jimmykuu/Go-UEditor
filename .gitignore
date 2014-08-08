@@ -24,3 +24,6 @@ _testmain.go
 
 bin
 pkg
+src/code.google.com
+src/github.com
+static/upload
