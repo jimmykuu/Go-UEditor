@@ -39,6 +39,12 @@ func uploadImage(w http.ResponseWriter, r *http.Request) {
 	defer file.Close()
 
 	filename := strings.Replace(uuid.NewUUID().String(), "-", "", -1) + path.Ext(header.Filename)
+	
+	err = os.MkdirAll(path.Join("static", "upload"), 0775)
+	if err != nil {
+		panic(err)
+	}
+	
 	outFile, err := os.Create(path.Join("static", "upload", filename))
 	if err != nil {
 		panic(err)
